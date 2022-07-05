@@ -26,6 +26,7 @@ inner join inventory on inventory.inventory_id = rental.inventory_id
 inner join film_category on film_category.film_id = inventory.film_id
 inner join category on category.category_id = film_category.category_id
 group by category.name
+order by Сумма desc
 limit 1;
 
 
